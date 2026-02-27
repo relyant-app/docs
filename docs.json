@@ -1,88 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "almond",
+  "name": "Relyant Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#024d3d",
+    "light": "#07ab8a",
+    "dark": "#013c30"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
@@ -90,33 +15,262 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Talk to Us",
+        "href": "https://relyant.app/contact-us"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://the.relyant.app"
     }
   },
   "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+    "options": ["copy", "view", "claude"]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              "index",
+              "getting-started/what-is-relyant",
+              "getting-started/key-concepts",
+              "getting-started/onboarding"
+            ]
+          },
+          {
+            "group": "Facilities",
+            "icon": "building",
+            "pages": [
+              {
+                "group": "Assets",
+                "expanded": false,
+                "pages": [
+                  "assets/overview",
+                  "assets/add-an-asset",
+                  "assets/manage-asset-hierarchy",
+                  "assets/assign-location",
+                  "assets/add-images-and-files",
+                  "assets/track-with-barcode-qr",
+                  "assets/categories-and-custom-fields"
+                ]
+              },
+              {
+                "group": "Locations",
+                "expanded": false,
+                "pages": [
+                  "locations/overview",
+                  "locations/add-a-building",
+                  "locations/add-floors-and-rooms",
+                  "locations/manage-location-hierarchy"
+                ]
+              },
+              {
+                "group": "Inventory",
+                "expanded": false,
+                "pages": [
+                  "inventory/overview",
+                  "inventory/track-stock-levels",
+                  "inventory/create-item-request"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Team",
+            "icon": "users",
+            "pages": [
+              {
+                "group": "Members",
+                "expanded": false,
+                "pages": [
+                  "members/overview",
+                  "members/invite-a-member",
+                  "members/manage-roles-and-permissions",
+                  "members/remove-a-member"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Maintenance",
+            "icon": "wrench",
+            "pages": [
+              {
+                "group": "Work Orders",
+                "expanded": false,
+                "pages": [
+                  "maintenance/work-orders/overview",
+                  "maintenance/work-orders/create-a-work-order",
+                  "maintenance/work-orders/assign-and-prioritize",
+                  "maintenance/work-orders/update-work-order-status",
+                  "maintenance/work-orders/add-files-and-notes",
+                  "maintenance/work-orders/complete-a-work-order"
+                ]
+              },
+              {
+                "group": "Work Requests",
+                "expanded": false,
+                "pages": [
+                  "maintenance/work-requests/overview",
+                  "maintenance/work-requests/submit-a-work-request",
+                  "maintenance/work-requests/review-and-convert-to-work-order"
+                ]
+              },
+              {
+                "group": "Preventive Maintenance",
+                "expanded": false,
+                "pages": [
+                  "maintenance/preventive-maintenance/overview",
+                  "maintenance/preventive-maintenance/create-a-pm-schedule",
+                  "maintenance/preventive-maintenance/set-recurrence",
+                  "maintenance/preventive-maintenance/auto-generated-work-orders"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Bookings",
+            "icon": "calendar",
+            "pages": [
+              {
+                "group": "Location Bookings",
+                "expanded": false,
+                "pages": [
+                  "bookings/location-bookings/overview",
+                  "bookings/location-bookings/reserve-a-room",
+                  "bookings/location-bookings/manage-booking-types",
+                  "bookings/location-bookings/setup-and-teardown-tasks"
+                ]
+              },
+              {
+                "group": "Asset Bookings",
+                "expanded": false,
+                "pages": [
+                  "bookings/asset-bookings/overview",
+                  "bookings/asset-bookings/reserve-an-asset",
+                  "bookings/asset-bookings/track-capacity-and-availability"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Procurement",
+            "icon": "cart-shopping",
+            "pages": [
+              {
+                "group": "Suppliers",
+                "expanded": false,
+                "pages": [
+                  "procurement/suppliers/overview",
+                  "procurement/suppliers/add-a-supplier",
+                  "procurement/suppliers/manage-supplier-details"
+                ]
+              },
+              {
+                "group": "Purchase Requests",
+                "expanded": false,
+                "pages": [
+                  "procurement/purchase-requests/overview",
+                  "procurement/purchase-requests/create-a-purchase-request",
+                  "procurement/purchase-requests/review-and-approve"
+                ]
+              },
+              {
+                "group": "Purchase Orders",
+                "expanded": false,
+                "pages": [
+                  "procurement/purchase-orders/overview",
+                  "procurement/purchase-orders/convert-from-request",
+                  "procurement/purchase-orders/receive-goods",
+                  "procurement/purchase-orders/goods-receipts"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Operations",
+            "icon": "gears",
+            "pages": [
+              {
+                "group": "Service Requests",
+                "expanded": false,
+                "pages": [
+                  "service-requests/overview",
+                  "service-requests/configure-request-types",
+                  "service-requests/manage-categories",
+                  "service-requests/set-up-approval-workflows",
+                  "service-requests/submit-a-service-request"
+                ]
+              },
+              {
+                "group": "Reports",
+                "expanded": false,
+                "pages": [
+                  "reports/overview",
+                  "reports/view-analytics-dashboard",
+                  "reports/filter-and-export-reports"
+                ]
+              },
+              {
+                "group": "Settings",
+                "expanded": false,
+                "pages": [
+                  "settings/overview",
+                  "settings/organization-settings",
+                  "settings/work-order-settings",
+                  "settings/booking-settings",
+                  "settings/notification-preferences"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Use Cases",
+            "pages": [
+              { "page": "use-cases/education", "icon": "graduation-cap" },
+              { "page": "use-cases/healthcare", "icon": "heart-pulse" },
+              { "page": "use-cases/commercial-real-estate", "icon": "building-2" },
+              { "page": "use-cases/hospitality", "icon": "hotel" }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Reference",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "Changelog",
+            "pages": [
+              "changelog"
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

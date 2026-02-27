@@ -1,0 +1,53 @@
+---
+title: "Goods Receipts"
+description: "View and manage goods receipt records for your purchase orders"
+---
+
+<Note>
+  **Required role:** **Admin** or **Manager**
+</Note>
+
+A goods receipt is an automatically created record that documents when and what was received against a purchase order. Goods receipts provide an audit trail for your procurement activity.
+
+## What a goods receipt contains
+
+| Field | Description |
+|---|---|
+| **Receipt number** | A unique identifier for the receipt |
+| **Purchase order** | The PO this receipt is linked to |
+| **Supplier** | The supplier who made the delivery |
+| **Receipt date** | When the goods were received |
+| **Items received** | Each item, quantity, and condition |
+| **Received by** | The Relyant user who logged the receipt |
+| **Notes** | Any notes added at the time of receipt |
+
+## View goods receipts
+
+<Steps>
+  <Step title="Go to Purchase Orders">
+    In **Procurement → Purchase Orders**, open the relevant PO.
+  </Step>
+  <Step title="View the Receipts tab">
+    Click the **Receipts** tab on the PO detail page to see all goods receipts linked to this PO.
+  </Step>
+  <Step title="Open a receipt">
+    Click on any receipt to view its full details.
+  </Step>
+</Steps>
+
+You can also view all goods receipts across all POs from **Procurement → Goods Receipts**.
+
+## Export a goods receipt
+
+On any goods receipt detail page, click **Download** to export the receipt as a PDF — useful for your internal records or reconciliation.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Purchase Orders Overview" icon="cart-shopping" href="/procurement/purchase-orders/overview">
+    Back to the purchase orders overview.
+  </Card>
+  <Card title="Track Stock Levels" icon="warehouse" href="/inventory/track-stock-levels">
+    See how received goods update your inventory stock.
+  </Card>
+</CardGroup>

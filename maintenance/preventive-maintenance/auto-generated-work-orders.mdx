@@ -1,0 +1,46 @@
+---
+title: "Auto-Generated Work Orders"
+description: "Understand how Relyant creates work orders from preventive maintenance schedules"
+---
+
+When a PM schedule's scheduled date arrives, Relyant automatically creates a work order and assigns it to the designated technician. This page explains how that process works and how to manage auto-generated orders.
+
+## How auto-generation works
+
+1. On the scheduled date, Relyant generates a work order based on the PM schedule's details (title, description, category, assignee)
+2. The work order appears in **Maintenance → Work Orders** with **Open** status
+3. The assigned technician receives a notification
+4. After the technician completes the work order, the next occurrence is scheduled automatically
+
+## Finding auto-generated work orders
+
+Auto-generated work orders are labelled with a **PM** badge in the Work Orders list. You can filter by **Source: Preventive Maintenance** to view only PM-generated orders.
+
+## If a work order isn't completed on time
+
+If an auto-generated work order isn't completed before the next occurrence is due, Relyant will:
+- Keep the existing open work order
+- Generate a new work order for the new occurrence
+- Flag the overdue work order in the schedule's detail view
+
+## Pausing or editing a schedule
+
+If you need to temporarily stop generating work orders (e.g., during a school holiday), you can pause the schedule:
+
+<Steps>
+  <Step title="Open the schedule">
+    In **Maintenance → Preventive Maintenance**, click the schedule.
+  </Step>
+  <Step title="Pause or edit">
+    Click **Pause** to temporarily stop work order generation, or **Edit** to change the schedule details or recurrence.
+  </Step>
+  <Step title="Resume when ready">
+    Click **Resume** to re-activate the schedule. The next work order will be generated based on the updated schedule.
+  </Step>
+</Steps>
+
+## Next steps
+
+<Card title="Create a Work Order" icon="plus" href="/maintenance/work-orders/create-a-work-order">
+  Create one-off work orders outside of a PM schedule.
+</Card>

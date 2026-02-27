@@ -1,0 +1,48 @@
+---
+title: "Set Up Approval Workflows"
+description: "Configure which service request types require approval before work begins"
+---
+
+<Note>
+  **Required role:** **Admin**
+</Note>
+
+Approval workflows let you require one or more approvals before a service request is acted on. This is useful for requests that involve resources, budget, or sensitive information.
+
+## Enable approval for a request type
+
+<Steps>
+  <Step title="Open the request type">
+    In **Settings → Service Request Settings**, click the request type you want to configure.
+  </Step>
+  <Step title="Enable approval">
+    Toggle **Requires Approval** to on.
+  </Step>
+  <Step title="Select approvers">
+    Choose who can approve requests of this type:
+    - **Any Admin** — any Admin in your organization can approve
+    - **Any Manager** — any Manager can approve
+    - **Specific members** — select specific people by name
+  </Step>
+  <Step title="Set approval rules">
+    Choose the approval logic:
+    - **Any one approver** — the request is approved when one person approves
+    - **All approvers** — the request requires approval from everyone in the list
+  </Step>
+  <Step title="Save">
+    Click **Save**. New requests of this type will now require approval before they move to **In Progress**.
+  </Step>
+</Steps>
+
+## How approval notifications work
+
+When a request requiring approval is submitted:
+1. All designated approvers receive a notification
+2. Approvers can approve or reject from the notification or from the service requests list
+3. Once the approval condition is met, the request moves to **In Progress** and the requester is notified
+
+## Next steps
+
+<Card title="Submit a Service Request" icon="plus" href="/service-requests/submit-a-service-request">
+  Submit a service request and see the approval workflow in action.
+</Card>

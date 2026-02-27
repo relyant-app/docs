@@ -1,0 +1,57 @@
+---
+title: "Key Concepts"
+description: "Core terminology and concepts used throughout Relyant"
+---
+
+Understanding these concepts will help you navigate Relyant and set up your organization effectively.
+
+## Organization
+
+Your **organization** is the top-level container for all your data in Relyant. Everything — assets, locations, members, work orders — belongs to a single organization. When you sign up, you create or join an organization.
+
+## Roles
+
+Relyant uses role-based access control. Each member is assigned one of the following roles:
+
+| Role | Description |
+|---|---|
+| **Owner** | Full access to all settings, billing, and member management |
+| **Admin** | Full access to all modules; can manage members and settings |
+| **Manager** | Can create and manage work orders, bookings, and procurement |
+| **Technician** | Can view and update assigned work orders |
+| **Requester** | Can submit work requests and service requests |
+
+## Assets
+
+An **asset** is any physical item your organization wants to track — a piece of equipment, a device, a vehicle, a room fixture, etc. Assets can be organized into categories, assigned to locations, and linked to maintenance records.
+
+## Locations
+
+**Locations** represent the physical spaces in your organization. They follow a hierarchy: **Building → Floor → Room**. Assets and bookings are linked to locations.
+
+## Work Orders
+
+A **work order** is a formal task assigned to a technician or team to complete a specific maintenance or repair job. Work orders have statuses, priorities, due dates, and can include files and notes.
+
+## Work Requests
+
+A **work request** is an informal maintenance request submitted by any user. Admins or managers review work requests and can convert them into formal work orders.
+
+## Preventive Maintenance
+
+**Preventive maintenance (PM)** schedules are recurring maintenance tasks tied to assets or locations. Relyant automatically generates work orders based on your defined schedule and recurrence rules.
+
+## Bookings
+
+A **booking** reserves a location or asset for a specific time period. Bookings can have types, approval workflows, and setup/teardown tasks.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Create Your Organization" icon="building" href="/getting-started/create-your-organization">
+    Get your organization set up in Relyant.
+  </Card>
+  <Card title="Invite Your Team" icon="users" href="/getting-started/invite-your-team">
+    Add members and assign roles.
+  </Card>
+</CardGroup>

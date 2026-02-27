@@ -1,0 +1,44 @@
+---
+title: "Receive Goods"
+description: "Log the receipt of items when a delivery arrives against a purchase order"
+---
+
+<Note>
+  **Required role:** **Admin** or **Manager**
+</Note>
+
+When goods from a purchase order are delivered, you record the receipt in Relyant. This updates the PO status and can automatically update inventory stock levels.
+
+## Steps
+
+<Steps>
+  <Step title="Open the purchase order">
+    In **Procurement → Purchase Orders**, click the PO with **Sent** status that the delivery corresponds to.
+  </Step>
+  <Step title="Click Receive Goods">
+    Click the **Receive Goods** button on the PO detail page.
+  </Step>
+  <Step title="Enter receipt details">
+    A goods receipt form will open with the PO's line items. For each item:
+    - **Quantity received** — enter how many units arrived (can be less than ordered if delivery is partial)
+    - **Condition** — note if any items arrived damaged (optional)
+  </Step>
+  <Step title="Set the receipt date">
+    Confirm or update the delivery date.
+  </Step>
+  <Step title="Add notes (optional)">
+    Add any notes about the delivery (e.g., "3 units arrived damaged", "Delivery included a packing slip").
+  </Step>
+  <Step title="Save">
+    Click **Save Receipt**. Relyant will:
+    - Update the PO status to **Partially Received** or **Received**
+    - Create a goods receipt record (see [Goods Receipts](/procurement/purchase-orders/goods-receipts))
+    - Update inventory stock levels for linked inventory items
+  </Step>
+</Steps>
+
+## Next steps
+
+<Card title="Goods Receipts" icon="file-check" href="/procurement/purchase-orders/goods-receipts">
+  View all goods receipt records for your purchase orders.
+</Card>

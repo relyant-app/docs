@@ -1,0 +1,42 @@
+---
+title: "Location Bookings Overview"
+description: "Reserve rooms and spaces for meetings, events, and activities"
+---
+
+Location bookings in Relyant let staff reserve rooms and spaces — classrooms, meeting rooms, gyms, labs, or any other bookable location. The booking system handles scheduling, conflict detection, and optional approval workflows.
+
+## Key concepts
+
+| Concept | Description |
+|---|---|
+| **Booking** | A reservation of a room for a specific date and time |
+| **Booking type** | A category for bookings (e.g., Class, Meeting, Event) that can have different rules |
+| **Capacity** | The maximum number of people a room can hold |
+| **Setup/teardown** | Extra time before or after a booking for preparation and cleanup |
+| **Conflict detection** | Automatic check that a room isn't double-booked |
+
+## Booking statuses
+
+| Status | Meaning |
+|---|---|
+| **Pending** | Submitted, awaiting approval (if approval workflow is enabled) |
+| **Confirmed** | Approved and scheduled |
+| **Cancelled** | Booking was cancelled |
+
+<Note>
+  All members can submit booking requests. **Admins** and **Managers** can approve, reject, and manage all bookings. Booking settings must be configured before rooms can be booked.
+</Note>
+
+## How-to guides
+
+<CardGroup cols={2}>
+  <Card title="Reserve a Room" icon="calendar-plus" href="/bookings/location-bookings/reserve-a-room">
+    Book a room or space for a specific time.
+  </Card>
+  <Card title="Manage Booking Types" icon="tags" href="/bookings/location-bookings/manage-booking-types">
+    Configure the categories and rules for bookings.
+  </Card>
+  <Card title="Setup and Teardown Tasks" icon="clock" href="/bookings/location-bookings/setup-and-teardown-tasks">
+    Add preparation and cleanup time to bookings.
+  </Card>
+</CardGroup>

@@ -1,0 +1,53 @@
+---
+title: "Set Recurrence"
+description: "Configure how often a preventive maintenance schedule generates work orders"
+---
+
+<Note>
+  **Required role:** **Admin** or **Manager**
+</Note>
+
+Recurrence controls how frequently Relyant generates a work order from a PM schedule. You can set a schedule to run daily, weekly, monthly, or at a custom interval.
+
+## Recurrence options
+
+| Type | Examples |
+|---|---|
+| **Daily** | Every day, every 3 days |
+| **Weekly** | Every week, every 2 weeks, on specific days |
+| **Monthly** | Every month, every 3 months, on a specific day of the month |
+| **Yearly** | Annually, on a specific date |
+| **Custom interval** | Every N days, weeks, or months |
+
+## Steps
+
+<Steps>
+  <Step title="Open a PM schedule">
+    In **Maintenance → Preventive Maintenance**, click the schedule you want to configure or open the recurrence step when creating a new schedule.
+  </Step>
+  <Step title="Select recurrence type">
+    Choose the frequency: Daily, Weekly, Monthly, Yearly, or Custom.
+  </Step>
+  <Step title="Configure the interval">
+    Depending on your selection:
+    - **Daily** — choose every N days
+    - **Weekly** — choose every N weeks and which days of the week
+    - **Monthly** — choose every N months and the specific day of the month
+    - **Yearly** — choose the month and day
+  </Step>
+  <Step title="Set an end condition (optional)">
+    Choose when the schedule should stop:
+    - **Never** — runs indefinitely
+    - **After N occurrences** — stops after a set number of work orders
+    - **On a specific date** — stops on a date you choose
+  </Step>
+  <Step title="Save">
+    Click **Save**. Relyant will calculate the next scheduled date and show it on the schedule's detail page.
+  </Step>
+</Steps>
+
+## Next steps
+
+<Card title="Auto-Generated Work Orders" icon="wand-magic-sparkles" href="/maintenance/preventive-maintenance/auto-generated-work-orders">
+  Learn how Relyant handles automatically created work orders.
+</Card>

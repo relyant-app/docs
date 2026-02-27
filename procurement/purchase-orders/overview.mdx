@@ -1,0 +1,42 @@
+---
+title: "Purchase Orders Overview"
+description: "Manage purchase orders from creation through to goods receipt"
+---
+
+Purchase orders (POs) are formal documents issued to suppliers authorizing the purchase of goods or services. Relyant tracks POs from creation through approval, delivery, and goods receipt.
+
+## Purchase order lifecycle
+
+1. **Create** — a PO is created (directly or converted from a purchase request)
+2. **Send to supplier** — the PO is issued to the supplier
+3. **Receive goods** — items arrive and are logged in a goods receipt
+4. **Close** — the PO is closed once all items are received
+
+## Purchase order statuses
+
+| Status | Meaning |
+|---|---|
+| **Draft** | Created but not yet sent |
+| **Sent** | Issued to the supplier |
+| **Partially Received** | Some items have been received |
+| **Received** | All items have been received |
+| **Closed** | PO is complete |
+| **Cancelled** | PO was cancelled |
+
+<Note>
+  **Required role:** **Admin** or **Manager** to create and manage purchase orders.
+</Note>
+
+## How-to guides
+
+<CardGroup cols={2}>
+  <Card title="Convert from Request" icon="arrows-rotate" href="/procurement/purchase-orders/convert-from-request">
+    Turn an approved purchase request into a PO.
+  </Card>
+  <Card title="Receive Goods" icon="boxes-stacked" href="/procurement/purchase-orders/receive-goods">
+    Log the receipt of items against a purchase order.
+  </Card>
+  <Card title="Goods Receipts" icon="file-check" href="/procurement/purchase-orders/goods-receipts">
+    View and manage goods receipt records.
+  </Card>
+</CardGroup>
