@@ -8,6 +8,39 @@
     "dark": "#013c30"
   },
   "favicon": "/favicon.svg",
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.relyant.app",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "Relyant is a facilities and operations management platform built for educational institutions — manage assets, maintenance, bookings, inventory, procurement, and more.",
+      "keywords": "Relyant, facilities management, operations, asset tracking, maintenance, bookings, inventory, procurement, school, education",
+      "author": "Relyant",
+      "robots": "index, follow",
+      "googlebot": "index, follow",
+      "google": "notranslate",
+      "generator": "Mintlify",
+      "color-scheme": "light dark",
+      "language": "en",
+      "copyright": "Copyright 2025 Relyant",
+      "reply-to": "support@relyant.app",
+      "distribution": "global",
+      "coverage": "Worldwide",
+      "category": "Technology",
+      "target": "all",
+      "HandheldFriendly": "True",
+      "MobileOptimized": "375",
+      "og:title": "Relyant Documentation — Facilities & Operations Management",
+      "og:type": "website",
+      "og:url": "https://docs.relyant.app/",
+      "og:image": "https://docs.relyant.app/logo/light.svg",
+      "og:description": "Relyant is a facilities and operations management platform built for educational institutions — manage assets, maintenance, bookings, inventory, procurement, and more.",
+      "og:locale": "en_US",
+      "twitter:title": "Relyant: Facilities & Operations Management for Schools",
+      "twitter:description": "Relyant is a facilities and operations management platform built for educational institutions — manage assets, maintenance, bookings, inventory, procurement, and more.",
+      "twitter:image": "https://docs.relyant.app/logo/light.svg"
+    }
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
@@ -31,6 +64,12 @@
   "footer": {
     "socials": {}
   },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/index"
+    }
+  ],
   "navigation": {
     "tabs": [
       {
