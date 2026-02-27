@@ -241,10 +241,10 @@
           {
             "group": "Use Cases",
             "pages": [
-              { "page": "use-cases/education", "icon": "graduation-cap" },
-              { "page": "use-cases/healthcare", "icon": "heart-pulse" },
-              { "page": "use-cases/commercial-real-estate", "icon": "building-2" },
-              { "page": "use-cases/hospitality", "icon": "hotel" }
+              "use-cases/education",
+              "use-cases/healthcare",
+              "use-cases/commercial-real-estate",
+              "use-cases/hospitality"
             ]
           }
         ]
