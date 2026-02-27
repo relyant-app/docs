@@ -264,7 +264,7 @@
         "tab": "Changelog",
         "groups": [
           {
-            "group": "Changelog",
+            "group": "Changelog / Release Notes",
             "pages": [
               "changelog"
             ]
